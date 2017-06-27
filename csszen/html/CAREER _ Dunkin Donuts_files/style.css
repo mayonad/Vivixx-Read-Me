@@ -1,0 +1,551 @@
+/*
+Theme Name: Dunkin & Donuts Corp
+Theme URI: http://incaendo.com/
+Description: This is the official corporate site of Dunkin & Donuts
+Author: the Incaendo Team
+Version: 1.0
+*/
+
+@font-face {
+  font-family: 'Frankfurter_MediumRegular';
+  src: url('css/ufonts.com_frankfurter_medium-webfont.eot');
+  src: url('css/ufonts.com_frankfurter_medium-webfont-.eot#iefix') format('embedded-opentype'),
+    url('css/ufonts.com_frankfurter_medium-webfont.woff') format('woff'),
+    url('css/ufonts.com_frankfurter_medium-webfont.ttf') format('truetype'),
+    url('css/ufonts.com_frankfurter_medium-webfont.svg#Frankfurter_MediumRegular') format('svg'),
+    url('css/Helvetica.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body,input,textarea{font-family: Frankfurter_MediumRegular,Arial,Georgia, "Bitstream Charter", serif;}
+
+#main-bg { position:fixed; height:100%; z-index:-1; width:100%;}
+#main-bg img { height:100%; width:100%;} 
+
+#main-wrapper { width:848px; margin:0 auto; position:relative;}
+
+/*Header Styles*/
+#header-main { height:83px; margin:11px 0 7px 0; border-bottom:solid 1px #e94399; border-top:solid 1px #f68428;}
+.logo {  float:left; padding-top:5px;width:153px}
+/*Menu*/
+
+#main-navigation { background:url(images/top-nav-mid.png) repeat-x 0 0; display:block; float:right; width:675px !important; padding-bottom:4px; margin-top:19px;font-size:12px;}
+.top-nav-left { float:left; margin-left:-20px;}
+#main-navigation .menu-header ul,
+div.menu ul {
+  list-style: none;
+  margin: 0;
+  float:left;
+width:675px;
+
+}
+div.menu li {
+  float: left;
+position: relative;
+}
+a{outline : none;}
+div.menu li a { color:#fff; font-weight: bolder ;line-height:36px; display:block; padding:0 20px;/*margin-left:18px ;/*-webkit-padding:0 24px ; */ text-decoration:none; font-size:11.3px; text-transform:uppercase; margin-top:2px; letter-spacing:0.5px; font-family:Helvetica;}
+
+
+#main-navigation ul div {
+    display: none;
+    margin-left: 10px;
+    margin-top: -25px;
+margin-left: 10px \9 !important;
+    margin-top: -25px\9 !important;
+    position: absolute;
+    top: 56px;
+    width: 100px;
+    z-index: 99999;
+left:0;
+}
+
+#main-navigation ul div ul {
+    background: url("images/bg.jpg") repeat scroll right 0 transparent;
+    box-shadow: 1px 1px 2px #34110D;
+    padding: 14px;
+    white-space: nowrap;
+    margin-left:-12px;
+margin-top: -1px;
+    width: 650px;}
+
+#main-navigation ul div ul ul { float:left; box-shadow:none; width:130px; margin-left:0; padding:0;}
+#main-navigation ul div li {
+  width: 162px;
+ /* width: 150px\0/IE8+9;
+  width: 155px\0/IE9;*/
+  background:none;
+}
+#main-navigation ul div a {
+  /*background: #fff2d7; */
+  line-height: 1em;
+  padding: 10px 0px 0;
+  width: 100%;
+  height: auto;
+  color:#fff;
+  font-size:12.5px;
+  background:none;
+  text-transform:none;
+}
+#main-navigation ul ul a:hover { color:#fede9a; background:none !important; font-weight: bold !important;} 
+#main-navigation li:hover > a { 
+  background: url(images/main-hover-bg.png) no-repeat right 0;
+  cursor:pointer
+}
+#main-navigation ul ul li:hover a { background:none; }
+#main-navigation ul li:hover > div {
+  display: block;
+}
+#main-navigation ul li.current_page_item > a,
+#main-navigation ul li.current-menu-ancestor > a,
+#main-navigation ul li.current-menu-item > a,
+#main-navigation ul li.current-menu-parent > a {
+  color: #fede 9a;
+  cursor: pointer;
+}
+* html #main-navigation ul li.current_page_item a,
+* html #main-navigation ul li.current-menu-ancestor a,
+* html #main-navigation ul li.current-menu-item a,
+* html #main-navigation ul li.current-menu-parent a,
+* html #main-navigation ul li a:hover {
+
+}
+#main-navigation ul ul li a{ background: none repeat scroll 0 0 transparent;
+                             min-width: 102px;  color: #663709;
+                             float: left;
+                             font-size: 20px;
+                             font-weight: 800;
+                             /*                             text-shadow: 0 0 3px #7A7676;*/
+                             text-transform: uppercase;
+                             width: 135px;}
+#main-navigation ul ul li a :hover{color: #FFF2D4;font-size:13px;}
+#main-navigation ul ul ul li a {line-height: 1em;
+                                padding: 10px 0px 0;
+                                width: 100%;
+                                height: auto;
+                                color:#fff;
+                                font-size:13px;
+                                background:none;
+                                text-transform:none;
+                                text-shadow:none;
+                                font-weight:normal !important ;
+}
+/*Mid Section*/
+.main-banner { position:relative;  /*height:514px;*/ float:left; width:100%;}
+.bot-banner{ position:relative; float:left; width:100%;}
+.yellow-bg { background:url(images/strip-grad.png) repeat-x 0 0; position:absolute; height:22px; width:866px; left:-9px; top:0px;}
+img.left-sp { float:left;}
+img.right-sp { float:right;}
+/*#slides .slides_control img { height:344px !important;}*/
+#slides2 .slides_control { width:100%;}
+/*#slides2 .slides_control img { height:144px !important; width:858px;}*/
+#slides .next {
+  right: -22px; top:220px; background:url(images/amp.png) no-repeat 0 0; position:absolute; display:block; height:52px; width:52px; z-index:1001;
+}
+#slides2 .next {
+  right: -28px; top:473px; background:url(images/amp.png) no-repeat 0 0; position:absolute; display:block; height:52px; width:52px; z-index:1001;
+}
+#slides_wow .next {
+  right: -22px; top:220px; background:url(images/amp.png) no-repeat 0 0; position:absolute; display:block; height:52px; width:52px; z-index:1001;
+}
+#slides_locator .next {
+  right: -28px; top:473px; background:url(images/amp.png) no-repeat 0 0; position:absolute; display:block; height:52px; width:52px; z-index:1001;
+}
+#slides_locator_image .next {
+  right: -28px; top:473px; background:url(images/amp.png) no-repeat 0 0; position:absolute; display:block; height:52px; width:52px; z-index:1001;
+}
+
+.pagination, .prev { display:block;}
+/*#slides2 { margin-top:12px;}*/
+.main-banner .pagination { display:block; margin: 26px auto 0;width: 100%;text-align: center; position:absolute; left:0; bottom:-20px; z-index:1000; margin-left:34px;}
+
+.main-banner .pagination li {
+   /*float: left; */
+    margin: 0 2px;
+    display: inline-block;
+    list-style: none outside none;
+    margin: 0 3px;
+}
+.main-banner .pagination li a {
+  /*background-image: url(images/brown-bullet.png) !important; */
+    background-position: 0 0;
+    background: #8c3f08;
+    border-radius: 50%;
+    display: block;
+    float: left;
+    height: 0;
+    overflow: hidden;
+    padding-top: 9px;
+    width: 9px;
+}
+.main-banner .pagination li.current a {
+  background-position: -10px 0; 
+}
+.main-banner .pagination.active li.current a{background: #ccc;}
+#slides .pagination {display:none;}
+#slides .pagination.active {display:block;}
+/*Footer Starts Here*/
+#footer-main { float:left; width:100%; font-family:Arial, Helvetica, sans-serif;}
+.bottom-logo { float:left; padding:0px 0 29px 0px; margin-top: 9px;}
+.right-section { float:right; margin-top:5px; width:768px; border-bottom:solid 1px #ec4399; border-top:solid 1px #f68428; font-size:10px; line-height:22px;}
+.right-section .bot-links { float:left;}
+.right-section .bot-links a { padding:0 8px; color:#979694; text-decoration:none;}
+.right-section .bot-links a:hover { color:#054d9f;}
+.copyright { float:right; color:#979694; padding-right:7px;}
+/* Localized */
+.arrow-top {
+    background: url("images/menu-arrow.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 18px;
+    margin-left: 24px;
+margin-left: 33px/0;    
+width: 21px;
+}
+.sub-menu-head { font-size:20px; color:#fff2d4; text-transform:uppercase; font-weight:bold; float:left; width:135px; text-shadow:0px 0px 3px #414141 ;font-family:Helvetica;}
+.clearfix:after { display:block; content:"."; visibility:hidden; height:0; clear:both;}
+/*About*/
+.copy-box { background:#fee7b5 url(images/content-bg.jpg) repeat-y 0 0; color:#7A531B; font-family:"Helvetica  Pro", Arial, Verdana; line-height:1.5; padding:25px 37px; font-size:13px; font-weight: bold; clear: both;} 
+.copy-box p { font-size:12px; line-height:1.7; margin-top: 4px; font-family:"Helvetica"; text-align:justify;}
+.copy-box .col-1 { width:49%; float:left;}
+.copy-box .col-2 { width:50%; float:right;}
+.copy-box .col-3 { width:384px; float:left;}
+.copy-box .col-6 { width:44.2%; float:left;}
+.copy-box .col-7 { width:47%; float:right;}
+.copy-box .coffee-menu { width:168px; float:right;}
+.copy-box .coffee-menu li {padding-bottom: 3px}
+
+.copy-box .coffee-menu li a {background: url("images/buttonbg1.png") no-repeat scroll 0 -27px transparent;
+                             color: #FFFFFF;
+                             display: block;
+                             font-size: 13px;
+                             height: 25px;
+                                                         line-height: 25px;
+                             text-align: center;
+                             text-decoration: none;
+                                                         font-family:Helvetica, Arial, sans-serif;
+                                                         font-weight:normal;}
+.copy-box .coffee-menu li a:hover {background:url(images/buttonbg1.png) no-repeat 0 0px; color:#FFFFFF;font-weight:bold;}
+.main-banner h1 { font-size:45px; color:#fff; font-weight:bold; text-shadow:1px 1px 5px #646464; position:absolute; bottom:-3px; left:10px; margin-left:40px;z-index: 1000000;}
+.main-banner h1 img { position:absolute; bottom:2px; margin-left:10px; z-index:1000;}
+.main-bread-crumb { float:left; width:100%;}
+.bredcrumb { float:left; width:70%; font-size:12.5px; color:#653600; font-family:"Helvetica  Pro", Arial, Verdana; padding:5px 0;}
+.bredcrumb a { color:#653600; text-decoration:none;font-family:"Helvetica", Courier, Arial, Verdana; font-weight:bo ld;}
+.bredcrumb a:hover { color:#653600; text-decoration:underline;}
+.bredcrumb strong { font-weight:bold;font-family:"Helvetica ", Arial, Verdana;}
+.download-menu { font-weigh:bold;float:right; font-family:"Helvetica  ", Arial, Verdana; font-size:12.5px; background:url(images/download.png) no-repeat right center; text-decoration:none; line-height:20px; cursor:pointer; padding-right:20px; color:#653600;}
+:hover.download-menu { color:#990000;}
+.coffee-details { float:left; width:100%;}
+.coffee-details .coffee-pic { float:left; width:443px;}
+.coffee-details .coffee-desc { float:right; width:385px; padding:10px; background:url(images/coffe-desc-bg.jpg) repeat-y right 0; color:#653600;  height:305px;  overflow-y: hidden;}
+.coffee-details .coffee-desc .heading-coffee {font-size:29px; height:35px;color:#f68428; font-weight:bold; margin-top:20px; margin-bottom: -10px;font-family: Helvetica,Frankfurter_MediumRegular,Arial,Georgia, "Bitstream Charter", serif;}
+.coffee-details .coffee-desc p {font-size:12.4px; font-weight:normal; color:#653600; line-height:1.4; margin:16px 0 0 0; font-family:Helvetica,"Helvetica  Pro",Frankfurter_MediumRegular,Arial,Georgia; float:le ft; width:95%;}
+.coffee-details .coffee-desc p strong { font-weight:bold; color:#653600; display:block; font-family: Helvetica,Frankfurter_MediumRegular,Arial,Georgia, "Bitstream Charter", serif;}
+.coffee-slide { float:left; width:100%;}
+.coffee-slide li { float:left;}
+.slides_container div { width:385px;} 
+.coffee-details .pagination { left:49% !important;}
+/*Career*/
+.copy-box .col-4 { width:750px; float:left;}
+.copy-box .col-4 a { color:#f68428; text-decoration:none;}
+.copy-box .col-4 a:hover {text-decoration:underline;}
+.slides_container div.wow { width:851px !important; }
+.wow-b { height:514px;}
+#slides .slides_control .wow img { height:506px !important;}
+.wow-b .pagination { bottom:70px; left:40px; }
+.wow-b .pagination li a {
+  background-image: url("images/brown-bullet.png") !important;
+  background-position: 0 0; 
+  display: block;
+  float: left;
+  height: 0;
+  overflow: hidden;
+  padding-top: 9px;
+  width: 9px;
+}
+.wow-b .pagination li.current a {
+  background-position: -10px 0;
+
+}
+.wow-b #slides .next { top:227px;}
+.coffee-desc #slides .next {top: 162px;display: block}
+/*Food Section*/
+.copy-box .food-menu { width:168px; float:right;}
+.copy-box .food-menu li {padding-bottom: 3px}
+.copy-box .food-menu li a {background: url("images/buttonbg1.png") no-repeat scroll 0 -27px transparent;
+                             color: #FFFFFF;
+                             display: block;
+                             font-size: 13px;
+                             height: 25px;
+							 line-height: 25px;
+                             text-align: center;
+                             text-decoration: none;
+							 font-family:Helvetica, Arial, sans-serif;
+							 font-weight:normal;}
+.copy-box .food-menu li a:hover {background:url(images/buttonbg1.png) no-repeat 0 0px; color:#FFFFFF;font-weight:bold;}
+* +  html .copy-box .food-menu li a { height:25px; padding-top:0;}
+.food-details { float:left; width:100%;}
+.food-details .coffee-pic { float:left; width:443px;}
+.food-details .coffee-desc { float:right; width:385px; padding:10px; background:url(images/coffe-desc-bg.jpg) repeat-y right 0; color:#653600;  height:305px;  overflow-y: hidden;}
+.food-details .coffee-desc .heading-coffee {font-size:29px; height:35px; color:#f68428; font-weight:bold; margin-top:20px; margin-bottom: -10px;font-family: Helvetica,Frankfurter_MediumRegular,Arial,Georgia, "Bitstream Charter", serif;}
+.food-details .coffee-desc p { font-size:12.4px; font-weight:normal; color:#653600; line-height:1.4; margin:16px 0 0 0; font-family:Helvetica,"Helvetica  Pro",Frankfurter_MediumRegular,Arial,Georgia; float:le ft; width:95%;}
+.food-details .coffee-desc p strong { font-weight:bold; color:#653600; display:block; font-family: Helvetica,Frankfurter_MediumRegular,Arial,Georgia, "Bitstream Charter", serif;}
+/*Beverages Section*/
+/*Food Section*/
+.copy-box .beverages-menu { width:168px; float:right;}
+.copy-box .beverages-menu li {padding-bottom: 3px}
+.copy-box .beverages-menu li a {background: url("images/buttonbg1.png") no-repeat scroll 0 -27px transparent;
+                             color: #FFFFFF;
+                             display: block;
+                             font-size: 13px;
+                             height: 25px;
+							 line-height: 25px;
+                             text-align: center;
+                             text-decoration: none;
+							 font-family:Helvetica, Arial, sans-serif;
+							 font-weight:normal;}
+* +  html .copy-box .beverages-menu li a { height:25px; padding-top:0;}
+.copy-box .beverages-menu li a:hover {background:url(images/buttonbg1.png) no-repeat 0 0px; color:#FFFFFF;font-weight:bold;}
+
+.beverages-details { float:left; width:100%;}
+.beverages-details .coffee-pic { float:left; width:443px;}
+.beverages-details .coffee-desc { float:right; width:385px; padding:10px; background:url(images/coffe-desc-bg.jpg) repeat-y right 0; color:#653600; height:305px;  overflow-y: hidden;}
+.beverages-details .coffee-desc .heading-coffee {font-size:29px; height:35px;color:#f68428; font-weight:bold; margin-top:20px; margin-bottom: -10px;font-family: Helvetica,Frankfurter_MediumRegular,Arial,Georgia, "Bitstream Charter", serif;}
+.beverages-details .coffee-desc p { font-size:12.4px; font-weight:normal; color:#653600; line-height:1.4; margin:16px 0 0 0; font-family:Helvetica,"Helvetica  Pro",Frankfurter_MediumRegular,Arial,Georgia; float:le ft; width:95%;}
+.beverages-details .coffee-desc p strong { font-weight:bold; letter-spacing: 1px;color:#653600; display:block; font-family: Helvetica,Frankfurter_MediumRegular,Arial,Georgia, "Bitstream Charter", serif;}
+.food-details .pagination, .beverages-details .pagination, .donuts-details .pagination  { display:none; margin: 26px auto 0;width: auto; position:absolute; left:auto; bottom:-11px; z-index:1000; }
+.food-details .pagination li a, .beverages-details .pagination li a, .donuts-details .pagination li a  {
+  background-image: url("images/brown-bullet.png") !important;
+  background-position: 0 0; 
+  display: block;
+  float: left;
+  height: 0;
+  overflow: hidden;
+  padding-top: 9px;
+  width: 9px;
+}
+.food-details .pagination  li.current a, .beverages-details .pagination li.current a, .donuts-details .pagination li.current a {
+  background-position: -10px 0;
+
+}
+
+/*Donuts Menu*/
+/*Donuts Menu*/
+.copy-box .donuts-menu { width:168px; float:right;}
+.copy-box .donuts-menu li {padding-bottom: 3px}
+.copy-box .donuts-menu li a {background: url("images/buttonbg1.png") no-repeat scroll 0 -27px transparent;
+                             color: #FFFFFF;
+                             display: block;
+                             font-size: 13px;
+                             height: 25px;
+							 line-height: 25px;
+                             text-align: center;
+                             text-decoration: none;
+							 font-family:Helvetica, Arial, sans-serif;
+							 font-weight:normal;
+}
+*+ html .copy-box .donuts-menu li a { height:25px; padding-top:0;}
+.copy-box .donuts-menu li a:hover {background:url(images/buttonbg1.png) no-repeat 0px 0px; color:#FFFFFF;font-weight:bold;}
+
+.donuts-details { float:left; width:100%;}
+.donuts-details .coffee-pic { float:left; width:443px;}
+.donuts-details .coffee-desc { float:right; width:385px; padding:10px; background:url(images/coffe-desc-bg.jpg) repeat-y right 0; color:#653600;  height:305px;  overflow-y: hidden;}
+.donuts-details .coffee-desc .heading-coffee {font-size:29px; color:#f68428; font-weight:bold; margin-top:27px; margin-bottom: -10px;font-family: Helvetica,Frankfurter_MediumRegular,Arial,Georgia, "Bitstream Charter", serif;}
+.donuts-details .coffee-desc p { font-size:12px; font-weight:normal; color:#653600; line-height:1.4; margin:15px 0 0 0; font-family:Helvetica,"Helvetica  Pro",Frankfurter_MediumRegular,Arial,Georgia; float:le ft; width:95%;}
+.donuts-details .coffee-desc p strong { font-weight:bold; color:#653600; display:block; font-family: Helvetica,Frankfurter_MediumRegular,Arial,Georgia, "Bitstream Charter", serif;}
+.common-slide { float:left; width:100%;}
+.common-slide li { float:left;}
+.common-slide li img { width:424px; height: 165px;}
+.common-slide #slides2 .slides_control div { width:848px; height:165px;}
+.common-slide #slides2 .slides_control img { width:424px; height:165px !important; float:left;}
+/*Locator Class*/
+#map-main { clear:both; width:848px;}
+.main-banner h1 cufon canvas { top:0px !important; z-index:10000;}
+.copy-box .col-5 { width:530px; float:left; font-size:80.5px;}
+.copy-box .address { float:right; width:160px; padding-left:17px; border-left:solid 1px #f067a1;}
+.copy-box .address strong { display:block;}
+.slides_control {color:#653600}
+#slides .slides_control .locator { width:848px;}
+#slides .slides_control .locator img { height:325px !important; width: 848px !important;}
+.locator-main { height:325px !important;}
+.locator-main .next,.locator-main .prev,.locator-main .pagination { display:none !important;}
+.main-banner .coffee-desc .pagination { width:auto; left:auto;}
+.wow-b .pagination { bottom:70px; left:40px; }
+.wow-b .pagination li a {
+  background-image: url("images/brown-bullet.png") !important;
+  background-position: 0 0; 
+  display: block;
+  float: left;
+  height: 0;
+  overflow: hidden;
+  padding-top: 9px;
+  width: 9px;
+}
+.wow-b .pagination li.current a {
+  background-position: -10px 0;
+}
+.coffee-pic img { width:443px; height:325px;}
+/*Food Section*/
+
+.food-details { float:left; width:100%;}
+.food-details .coffee-pic { float:left; width:443px;}
+.food-details .coffee-desc { float:right; width:385px; padding:10px; background:url(images/coffe-desc-bg.jpg) repeat-y right 0; color:#653600;  height:305px;  overflow-y: hidden;}
+.food-details .coffee-desc .heading-coffee {font-size:29px; height:35px; color:#f68428; font-weight:bold; margin-top:27px; margin-bottom: -10px;font-family: Helvetica,Frankfurter_MediumRegular,Arial,Georgia, "Bitstream Charter", serif;}
+.food-details .coffee-desc p { font-size:12px; font-weight:normal; color:#653600; line-height:1.4; margin:16px 0 0 0; font-family:Helvetica,"Helvetica  Pro",Frankfurter_MediumRegular,Arial,Georgia; float:le ft; width:95%;}
+.food-details .coffee-desc p strong { font-weight:bold; color:#653600; display:block; font-family: Helvetica,Frankfurter_MediumRegular,Arial,Georgia, "Bitstream Charter", serif;}
+/*Beverages Section*/
+
+.copy-box .beverages-menu li a:hover {background:url(images/donuts-menu-bg.png) repeat-x 0 -22px; color:#fff;}
+
+.beverages-details { float:left; width:100%;}
+.beverages-details .coffee-pic { float:left; width:443px;}
+.beverages-details .coffee-desc { float:right; width:385px; padding:10px; background:url(images/coffe-desc-bg.jpg) repeat-y right 0; color:#653600; height:305px;  overflow-y: hidden;}
+.beverages-details .coffee-desc .heading-coffee {font-size:29px; height:35px;color:#f68428; font-weight:bold; margin-top:27px; margin-bottom: -10px;font-family: Helvetica,Frankfurter_MediumRegular,Arial,Georgia, "Bitstream Charter", serif;}
+.beverages-details .coffee-desc p { font-size:12px; font-weight:normal; color:#653600; line-height:1.4; margin:16px 0 0 0; font-family:"Helvetica  Pro", Arial, Verdana; float:le ft; width:95.2%;}
+.beverages-details .coffee-desc p strong { font-weight:bold; letter-spacing: 1px;color:#653600; display:block; font-family: "Helvetica"}
+.food-details .pagination, .beverages-details .pagination, .donuts-details .pagination  { display:none; margin: 26px auto 0;width: auto; position:absolute; left:auto; bottom:-11px; z-index:1000; }
+.food-details .pagination li a, .beverages-details .pagination li a, .donuts-details .pagination li a  {
+  background-image: url("images/brown-bullet.png") !important;
+  background-position: 0 0; 
+  display: block;
+  float: left;
+  height: 0;
+  overflow: hidden;
+  padding-top: 9px;
+  width: 9px;
+}
+.food-details .pagination  li.current a, .beverages-details .pagination li.current a, .donuts-details .pagination li.current a {
+  background-position: -10px 0;
+
+}
+
+/*Map*/
+#content {position:relative;left:0px;top:0px;overflow:hidden;z-index:10;height:193px;width:381px;}
+#siteNotice {font-family: Frankfurter_MediumRegular,Arial,Georgia, "Bitstream Charter", serif; font-size: 20px; color: #FF9900;letter-spacing:1px;}
+#siteNotice a {text-decoration:none; color:#206ed1; font-family: Arial, verdana, tahoma; font-size: 14px;}
+#firstHeading {font-family: Arial, verdana, tahoma; font-size: 14px; font-weight:bold; padding-bottom:7px;}
+#bodyContent {font-family: Arial, verdana, tahoma; font-size: 12px;min-height:110px; width:290px; line-height:1.5;}
+#bodyContent a,#bottom a {color:#116bd5; text-decoration:none;font-family: Arial, verdana, tahoma; font-size: 12px;}
+#bodyContent a:hover,#bottom a:hover {color:#116bd5; text-decoration:underline;}
+.ind_div {width: 848px !important;}
+/*.ind_div img {width: 848px !important;}*/
+.sub-menu {display:none; font-family: H}
+*:first-child+html .clearfix {zoom:1}
+.heading-locator {text-transform: uppercase;}
+
+
+/*Disclaimer*/
+
+/*@font-face {
+  font-family: 'Conv_Helvetica Pro-Regular';
+  src: url('fonts/Helvetica Pro-Regular.eot');
+
+  src: local('?'), url('fonts/Helvetica Pro-Regular.woff') format('woff'), url('fonts/Helvetica Pro-Regular.ttf') format('truetype'), url('fonts/Helvetica Pro-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+.terms-main {background:#FEDE9A repeat-y 0 0; width:808px; min-height:400px; float:left; padding:37px 20px 5px; font-size:10px;color:#653600;}
+.terms-main  h1 { font-size:4.4em; margin:0 0 5px;; padding:0; color:#fff; text-transform:uppercase;}
+.terms-main  p { font-family:Conv_Helvetica Pro-Regular, Arial, Helvetica, sans-serif; font-size:1.25em; margin-bottom:20px; line-height:2.2; color:#653600;}
+.terms-main  p strong { font-weight:700; display:block;}
+.terms-main ul { list-style:disc outside none; margin:-16px 0 20px 14px; padding:0; }
+.terms-main ul li { font-family:Conv_Helvetica Pro-Regular, Arial, Helvetica, sans-serif; font-size:1.25em; margin-bottom:6px;}
+
+/*sitemap rules */
+
+.termss-main { background:#FEDE9A url(images/disclaimer-bg.jpg) repeat-y 0 0; width:808px; min-height:400px; float:left; padding:37px 20px 5px; font-size:10px;color:#653600;}
+.termss-main  h1 { font-size:4.4em; margin:0 0 5px;; padding:0; color:#fff; text-transform:uppercase;}
+.termss-main  p { font-family:Helvetica ; font-size:1.25em; margin-bottom:13px; line-height:1.5; color:#653600;}
+.termss-main  p strong { font-weight:700; display:block;}
+.termss-main ul { list-style:disc outside none; margin:-10px 0 0px 20px; padding:0; }
+.termss-main ul li ul { list-style:disc outside none; margin:-10px 0 0px 20px; padding:0; }
+.termss-main ul li { font-family:Helvetica ; font-size:1.25em; margin-bottom:6px;margin-top:10px;font-weight:bold;margin-left:20px;}
+.termss-main ul li ul li{
+    font-family: Helvetica;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 6px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.termss-main ul li a {color:#653600; text-decoration:none;font-size: 15px; }
+.menucategory {font-family:Conv_Helvetica Pro-Regular, Arial, Helvetica, sans-serif;font-size: 1.25em; font-weight: 700;margin-left: 0px;}
+.menusubcategory{font-family:Conv_Helvetica Pro-Regular, Arial, Helvetica, sans-serif;font-size: 1em; margin-left: 50px;}
+.linksubheading{text-decoration: none;color: #653600; font-weight: 100}
+.linkheading{text-decoration: none;color: #653600; font-size: 1.25em;}
+.linkheadingshref{font-size:12px !important}
+.linkheadingmain{font-size:0px !important;}
+.headings {font-family:Conv_Helvetica Pro-Regular, Arial, Helvetica, sans-serif;font-size: 20px; margin-top: 10px;}
+.linkheadings{text-decoration: none;color: #653600;margin-left:-20px;font-size: 20px !important; }
+.loctor-box { background:#fee7b5 url(images/content-bg.jpg) repeat-y 0 0; color:#7A531B; font-family:"Helvetica"; line-height:1.8; padding:45px; font-size:13px; clear: both; height:520px;} 
+.loctor-box .slides_container div { font-size:12px;}
+.copy-box .col-8 {
+    float: left;
+    width: 57.2%;
+}
+ #address {
+    font-size: 10px;
+    color: #979694;
+    position: relative;
+    left:20px;
+}
+#menu-item-2395 {background: url(images/main-hover-bg.png) no-repeat right 2px;}
+.addressOuter {
+   margin: 0 -15px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.addressOuter:before, .addressOuter:after {
+  content:'';
+  clear: both;
+   display: table;
+}
+
+.addressOuter .addressBox {
+   width: 50%;
+   float: left;
+}
+
+.addressOuter .addressBox {
+   font-size: 20px;
+}
+.clearBoth {clear: both;width:100%!important}
+
+.displayFlex {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.addressOuter {
+   width: 100% !important;
+   margin: 0 -15px;
+  /*8display: flex;
+   flex-wrap: wrap;*/
+}
+
+.addressOuter:before, .addressOuter:after {
+  content:'';
+  clear: both;
+   display: table;
+}
+
+.addressOuter .addressBox {
+   width: 29%;
+   padding: 0 15px;
+   float: left;
+}
+
+.addressOuter .addressBox p {
+   margin-bottom: 15px;
+   font-size: 13px;
+}
+
+.addressTitle {
+    font-size: 20px;
+    border-bottom: 1px solid #dcb89a;
+    margin-bottom: 15px;
+}
+#slides_locator .pagination {display: none;}

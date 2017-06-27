@@ -1,0 +1,100 @@
+html {
+  margin: 0;
+	padding: 0;
+}
+
+body {
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0045WSwBE_U_JPAObwysBDlkzq_iHCPnsOyqo2qDmI8tObr53NQ");
+
+  }
+
+p {
+  padding: 1;
+  font-size: 5px;
+}
+
+h3 {
+  letter-spacing: 2px;
+  color: violet;
+}
+
+a:link {
+  text-decoration: medium;
+  margin-bottom: 36;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: underline;
+  color: #9685BA;
+}
+
+abbr {
+  border-bottom: none;
+  background: "https://s-media-cache-ak0.pinimg.com/originals/3e/a2/29/3ea2292218faca89a482743d4ccbd422.jpg"
+}
+
+.page-wrapper {
+  background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left;
+	padding: 0 175px 0 110px;
+	margin: 0;
+}
+
+.intro {
+  min-width: 470px;
+	width: 100%;
+}
+
+header h1 {
+  display: block;
+	width: 219px;
+	height: 87px;
+	float: left;
+
+	text-indent: 100%;
+}
+
+header h2 {
+  white-space: nowrap;
+	overflow: hidden;
+}
+
+header {
+  height: 100px;
+}
+
+.summary {
+  float: left;
+}
+
+.summary p {
+	font: italic 1.1em/2.2 georgia;
+	text-align: center;
+	}
+
+.supporting {
+  margin-bottom: 7;
+}
+
+footer {
+  text-align: center;
+}
+
+.sidebar {
+	margin-left: 600px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	}
+
+  .sidebar ul {
+  	margin: 0;
+  	padding: 0;
+  	}
+
+    .extra1 {
+    	position: absolute;
+    	top: 70px;
+    	right: 15;
+    	width: 70px;
+    	height: 70px;
+    }
