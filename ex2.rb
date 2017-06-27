@@ -1,4 +1,4 @@
-joke = 'THE TWO MAN'
+
 puts joke
 inpu = gets.chomp
 #
