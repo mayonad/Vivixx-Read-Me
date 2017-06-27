@@ -19,6 +19,7 @@ cars.car_details.push({"code"=>0, "make"=>"Toyota", "age"=>2, "top_speed"=>"1km/
 cars.car_details.push({"code"=>1, "make"=>"Honda", "age"=>2, "top_speed"=>"2km/s","gas_tank_size"=>"13 Gallons"})
 cars.car_details.push({"code"=>2, "make"=>"MB", "age"=>2, "top_speed"=>"3km/s","gas_tank_size"=>"15 Gallons"})
 cars.car_details.push({"code"=>3, "make"=>"Lamborghini", "age"=>2, "top_speed"=>"0.1km/s","gas_tank_size"=>"15 Gallons"})
+cars.car_details.push({"code"=>4, "make"=>"Car-agcarag", "age"=>2, "top_speed"=>"3km/s","gas_tank_size"=>"40 Gallons"})
 drivers=Driver.new
 
 
